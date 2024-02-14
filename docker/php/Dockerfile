@@ -1,4 +1,4 @@
-FROM php:8.2.12-fpm-alpine3.18
+FROM php:8.2.12-fpm
 
 COPY ./conf/php.ini /usr/local/etc/php/
 
