@@ -1,0 +1,22 @@
+# Docker environment variables template file
+# Used to deploy the app in local, dev, pre and pro environments
+# To deploy the local environment:
+#     1. Create a copy called docker-env.local
+#     2. Populate variables
+#     3. In the project directory, run:
+#         docker-compose --env-file docker/docker-env.local [COMMAND]
+
+COMPOSE_PROJECT_NAME=symfony-template
+
+PROJECT_NAME=sf-template
+PROJECT_ENV=local
+PROJECT_COMPONENT=api
+
+WEB_EXTERNAL_PORT=8080
+DB_EXTERNAL_PORT=5432
+
+XDEBUG_ENABLED=1
+
+DB_NAME=admin
+DB_USER=admin
+DB_PASS=admin
